@@ -1,0 +1,15 @@
+## Review Services
+## With this simple cmdlets, you can view a variety of information on services 
+## There are difference in these two cmdlets, which allows you to see different amounts of information on the given services
+
+
+Get-Service | select-object Name,DisplayName,Status,StartType
+
+Get-CimInstance -ClassName Win32_Service | Select-Object Name,DisplayName,StartMode,State,Pathname,StartName,ServiceType
+
+## You can also add a pleasant second screen grid to view your output with the cmdlet Out-GridView
+
+
+Get-Service | select-object Name,DisplayName,Status,StartType | Out-GridView
+
+Get-CimInstance -ClassName Win32_Service | Select-Object Name,DisplayName,StartMode,State,Pathname,StartName,ServiceType | Out-GridView
