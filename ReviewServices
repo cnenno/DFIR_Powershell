@@ -11,5 +11,6 @@ Get-CimInstance -ClassName Win32_Service | Select-Object Name,DisplayName,StartM
 
 
 Get-Service | select-object Name,DisplayName,Status,StartType | Out-GridView
-
+Get-Process
+Get-Process -IncludeUserName
 Get-CimInstance -ClassName Win32_Service | Select-Object Name,DisplayName,StartMode,State,Pathname,StartName,ServiceType | Out-GridView
