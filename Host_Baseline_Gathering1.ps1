@@ -3,6 +3,15 @@
 ########## BY COREY NENNO, Cyber Sec Engineer ####
 ##################################################
 
+### Summary
+### This script is used to gather a baseling of a target host system
+### Then produce a word document, which will allow you to perform on the go
+### File comparison to detect changes to a host system.
+### The final product of the script is a word document with full listings
+### of dates, times, processes, names, users, tasks, mappings, etc.
+### It can also be paused and allow for file comparison immediately 
+### following intial baselining.
+
 #AS ALWAYS
 #do this first
 #Update-Help -Verbose -Force -ErrorAction SilentlyContinue           UNPOUND THIS WHEN NEEDED
